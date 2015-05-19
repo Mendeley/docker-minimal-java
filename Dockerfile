@@ -7,6 +7,7 @@ RUN opkg-install curl ca-certificates
 ENV JAVA_HOME /usr/jdk1.8.0_45
 
 RUN curl \
+  --silent \
   --location \
   --retry 3 \
   --cacert /etc/ssl/certs/GeoTrust_Global_CA.crt \
